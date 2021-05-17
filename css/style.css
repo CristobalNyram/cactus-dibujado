@@ -1,0 +1,120 @@
+:root
+{
+    --green:#055F03;
+    --landscape:#CED42F;
+
+}
+
+
+
+*{
+
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+body
+{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-color: var(--landscape);
+}
+
+.trunk{
+    position: relative;
+    height: 500px;
+    width: 100px;
+    background-color: var(--green);
+    border-radius:50% 50% 0 0 ;/*tiene el sentido a las manesillas del relog*/
+
+}
+.brach
+{
+    position: relative;
+
+    background-color: var(--green);
+
+    width: 60px;
+    height: 150px;
+    
+    z-index: 1;
+    
+    left:5px;
+
+    transform: rotate(90deg);
+
+    border-radius:10px 40px 10px 0;
+
+   
+
+    /* transform: rotate(3deg); */
+
+
+}
+
+.brach::after
+{
+    content: "";
+    position:absolute;
+
+    background-color: var(--green);
+    width: 60px;
+    height: 150px;
+    
+    z-index: 1;
+    
+    left:-90px;
+    bottom: 44.5px;
+
+    transform: rotate(90deg);
+
+    border-radius: 0 0 50px 50px;
+}
+
+.brach-1
+{
+    position: relative;
+
+    background-color: var(--green);
+
+    width: 60px;
+    height: 120px;
+    
+    z-index: 1;
+    
+    right:225px;
+    top: 50px;
+
+    transform: rotate(90deg);
+
+    border-radius:0 0 60px 0px;
+
+   
+
+    /* transform: rotate(3deg); */
+
+
+}
+
+.brach-1::after
+{
+    content: "";
+    position:absolute;
+
+    background-color: var(--green);
+    width: 60px;
+    height: 100px;
+    
+    z-index: 1;
+    
+    left:-58px;
+    bottom:-21px;
+
+    transform: rotate(90deg);
+
+    border-radius: 15px 50px 50px 50px;
+}
